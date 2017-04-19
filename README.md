@@ -1,6 +1,6 @@
 # e-Municipal
 
-Plataforma web para sites públicos municipais. 
+site oficial do município de Alto Paraíso-RO. 
 
 O **e-Municipal** esta sendo desenvolvido e mantido pelo departamento de informática do município de Alto Paraíso-RO, para uso no próprio site oficial do município <a href='http://www.altoparaiso.ro.gov.br'>www.altoparaiso.ro.gov.br</a>.
 
