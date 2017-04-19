@@ -4,10 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Web</title>
+    <title>@ViewData["Title"] - Prefeitura Municipal de Alto Paraíso - RO</title>
 
     <environment names="Development">
+        <!-- core CSS -->
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/fontawesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/animate.min.css">
+        <link rel="stylesheet" href="~/css/owl.carousel.css">
+        <link rel="stylesheet" href="~/css/owl.transitions.css">
+        <link rel="stylesheet" href="~/css/prettyPhoto.css">
+        <link rel="stylesheet" href="~/css/main.css">
+        <link rel="stylesheet" href="~/css/responsive.css">
+
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
@@ -16,41 +25,148 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+    <link rel="shortcut icon" href="~/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="~/images/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- Redirecionamento -->
+    <!--[if lt IE 9]>
+            <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <![endif]-->
+    <!--[if lt IE 8]>
+            <script type="text/javascript">
+            //<![CDATA[
+                location.href="http://updateyourbrowser.net/pt/";
+            //]]>
+        </script>
+    <![endif]-->
+
+
+
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<body id="home" class="homepage">
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="~/"><img src="~/images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="~/">Início</a></li>
+                        
+                        <li class="scroll dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alto Paraíso<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://pt.wikipedia.org/wiki/Alto_Paraíso_(Rondônia)">História de Alto Paraíso</a></li>
+                                <li><a href="#">Dados do Município</a></li>
+                            </ul>
+                        </li>
+                        <li class="scroll"><a href="#home">Notícias</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prefeitura<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-controller="prefeitura" asp-action="equipedegoverno">Equipe de Governo</a></li>
+                                <li><a href="#">Endereços e Telefones</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cidadão<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ouvidoria</a></li>
+                                <li><a href="#">Portal da Transparência</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empresa<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Nota Fiscal Eletrônica</a></li>
+                                <li><a href="#">Licitações</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servidor<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Contracheque</a></li>
+                                <li><a href="#">E-mail institucional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Turista<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Agenda Cultural</a></li>
+                                <li><a href="#">Guia da Cidade</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+
+
+    @RenderBody()
+
+
+    <footer id="footer">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Web</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-6">
+                    @DateTime.Now.Year Prefeitura Municipal de Alto Paraíso - RO. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - Web</p>
-        </footer>
-    </div>
+    </footer><!--/#footer-->
+
 
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        
+        
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/mousescroll.js"></script>
+        <script src="~/js/smoothscroll.js"></script>
+        <script src="~/js/jquery.prettyPhoto.js"></script>
+        <script src="~/js/jquery.isotope.min.js"></script>
+        <script src="~/js/jquery.inview.min.js"></script>
+        <script src="~/js/wow.min.js"></script>
+        <script src="~/js/main.js"></script>
+
         <script src="~/js/site.js" asp-append-version="true"></script>
+
     </environment>
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
