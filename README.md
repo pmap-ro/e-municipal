@@ -1,6 +1,8 @@
 # e-Municipal
 
-site oficial do município de Alto Paraíso-RO. 
+[![Build status](https://ci.appveyor.com/api/projects/status/0cmj9nlj9bc8js4a?svg=true)](https://ci.appveyor.com/project/cleytonferrari/e-municipal)
+
+Site oficial do município de Alto Paraíso-RO. 
 
 O **e-Municipal** esta sendo desenvolvido e mantido pelo departamento de informática do município de Alto Paraíso-RO, para uso no próprio site oficial do município <a href='http://www.altoparaiso.ro.gov.br'>www.altoparaiso.ro.gov.br</a>.
 
