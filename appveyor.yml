@@ -1,0 +1,7 @@
+os: Visual Studio 2017
+init:
+  - git config --global core.autocrlf true
+branches:
+  only:
+    - master
+clone_depth: 1
