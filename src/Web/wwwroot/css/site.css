@@ -1,1 +1,9 @@
 ﻿
+
+.portfolio-item-inner {
+    border-top: 4px solid #ccc;
+    
+}
+.portfolio-item-inner:hover {
+    border-top: 4px solid #45aed6;
+}
