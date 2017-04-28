@@ -12,3 +12,7 @@
 .margin-bottom-20px{
     margin-bottom: 20px;
 }
+
+#meet-team .team-member{
+    min-height: 520px;
+}

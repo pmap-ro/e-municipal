@@ -1,4 +1,4 @@
-
+@model dynamic
 @{
     ViewData["Title"] = "Equipe de Governo";
 }
@@ -20,57 +20,23 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 margin-bottom-20px">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="~/images/team/01.gif" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>Helma Santana Amorin</h3>
-                        <span>Prefeita</span>
-                    </div>
-                    <p>Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO</p>
-                </div>
-            </div>
 
+        @foreach(dynamic item in Model.EquipeDeGoverno)
+        {
             <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 margin-bottom-20px">
                 <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                     <div class="team-img">
-                        <img class="img-responsive" src="~/images/team/02.gif" alt="">
+                        <img class="img-responsive" src="@item.Imagem" alt="">
                     </div>
                     <div class="team-info">
-                        <h3>Valmir dos Santos</h3>
-                        <span>Vice-Prefeito / Secretário Municipal de Meio Ambiente</span>
+                        <h3>@item.Nome</h3>
+                        <span>@item.Cargo</span>
                     </div>
-                    <p>Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso</p>
+                <p>@item.Endereco</p>
                 </div>
             </div>
+        }
 
-            <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 margin-bottom-20px">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="~/images/team/02.gif" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>Fábio Pereira da Silva</h3>
-                        <span>Secretário Municipal de Saúde</span>
-                    </div>
-                    <p>Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso</p>
-                </div>
-            </div>
-            
-            <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 margin-bottom-20px">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="~/images/team/01.gif" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>Débora Lúcia Raposo da Silva</h3>
-                        <span>Secretária Municipal de Educação</span>
-                    </div>
-                    <p>Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso</p>
-                </div>
-            </div>
         
         </div>
         <div class="divider"></div>

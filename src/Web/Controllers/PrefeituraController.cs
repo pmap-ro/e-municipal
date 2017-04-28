@@ -1,10 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
 namespace Web.Controllers
@@ -13,7 +9,18 @@ namespace Web.Controllers
     {
         public IActionResult EquipeDeGoverno()
         {
-            return View();
+            return View(LoadJson());
+        }
+
+        public dynamic LoadJson()
+        {
+            dynamic dados;
+            using (StreamReader r = System.IO.File.OpenText("dados.json"))
+            {
+                string json = r.ReadToEnd();
+                dados = JsonConvert.DeserializeObject(json);
+            }
+            return dados;
         }
     }
 }
