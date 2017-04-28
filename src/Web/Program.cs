@@ -20,6 +20,7 @@ namespace Web
                 .Build();
 
             host.Run();
+
         }
     }
 }
