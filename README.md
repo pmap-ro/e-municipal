@@ -15,4 +15,4 @@ O **e-Municipal** esta sendo desenvolvido e mantido pelo departamento de inform√
 ## Funcionalidades
 
 - P√°gina Inicial
-- Contato
+- Equipe de Governo
