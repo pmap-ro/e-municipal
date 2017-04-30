@@ -12,4 +12,4 @@ after_build:
 artifacts:
 - path: src\Web\publicar\**\*.*
   name: Publicar_WebDeploy
-  type: WebDeployPackage
+  type: Zip
