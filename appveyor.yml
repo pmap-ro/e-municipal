@@ -10,6 +10,6 @@ build_script:
 after_build:
 - cmd: dotnet publish --output .\publicar --configuration Release
 artifacts:
-- path: .\publicar
+- path: .\publicar\**\*.*
   name: Publicar_WebDeploy
   type: WebDeployPackage
