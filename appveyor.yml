@@ -10,6 +10,6 @@ build_script:
 after_build:
 - cmd: dotnet publish src\Web\ --output publicar --configuration Release && 7z a src\Web\e-municipal.zip src\Web\publicar\**\*.* && dir src\Web
 artifacts:
-- path: src\Web\publicar\**\*.*
+- path: src\Web\e-municipal.zip
   name: Publicar_WebDeploy
   type: Zip
