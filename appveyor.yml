@@ -8,7 +8,7 @@ install:
 build_script:
   - dotnet build
 after_build:
-- cmd: dotnet publish --output .\publicar --configuration Release
+- cmd: dotnet publish --output .\publicar --configuration Release && dir .\publicar
 artifacts:
 - path: .\publicar\**\*.*
   name: Publicar_WebDeploy
