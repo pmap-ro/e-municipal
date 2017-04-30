@@ -8,8 +8,8 @@ install:
 build_script:
   - dotnet build
 after_build:
-- cmd: dotnet publish --output publicar --configuration Release
+- cmd: dotnet publish --output "C:\projects\e-municipal\src\Web\publicar" --configuration Release
 artifacts:
-- path: publicar
+- path: "C:\projects\e-municipal\src\Web\publicar"
   name: DeployTeste
   type: WebDeployPackage
