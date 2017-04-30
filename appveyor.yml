@@ -8,7 +8,7 @@ install:
 build_script:
   - dotnet build
 after_build:
-- cmd: dotnet publish src\Web\ --output publicar --configuration Release && 7z a src\Web\e-municipal.zip src\Web\publicar\* && dir src\Web
+- cmd: dotnet publish src\Web\ --output publicar --configuration Release && cd src\Web && 7z a e-municipal.zip publicar\* && dir src\Web
 artifacts:
 - path: src\Web\e-municipal.zip
   name: Publicar_WebDeploy
