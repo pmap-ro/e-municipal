@@ -7,3 +7,9 @@ install:
   - dotnet restore
 build_script:
   - dotnet build
+after_build:
+- cmd: dotnet publish --output publicar --configuration Release
+artifacts:
+- path: publicar
+  name: DeployTeste
+  type: WebDeployPackage
