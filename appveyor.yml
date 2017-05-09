@@ -7,3 +7,9 @@ install:
   - dotnet restore
 build_script:
   - dotnet build
+after_build:
+- cmd: dotnet publish src\Web\ --output publicar --configuration Release && 7z a e-municipal-%APPVEYOR_BUILD_VERSION%.zip src\Web\publicar\* && dir src\Web
+artifacts:
+- path: e-municipal-%APPVEYOR_BUILD_VERSION%.zip
+  name: Publicar_WebDeploy
+  type: Zip
