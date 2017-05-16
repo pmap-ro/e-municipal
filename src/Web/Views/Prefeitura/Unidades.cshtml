@@ -1,0 +1,45 @@
+@model dynamic
+@{
+    ViewData["Title"] = "Secretarias, Órgãos e Unidades do munícipio de Alto Paraíso - RO";
+}
+
+<div class="container">
+
+
+    <ol class="breadcrumb">
+        <li><a href="~/">Início</a></li>
+        <li>Prefeitura</li>
+        <li><a asp-area="" asp-controller="prefeitura" asp-action="unidades" class="active">Unidades</a></li>
+    </ol>
+</div>
+<section id="meet-team">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown">Unidades</h2>
+            <p class="text-center wow fadeInDown">Conheça as Secretarias, Órgãos e Unidades do munícipio de Alto Paraíso - RO.</p>
+        </div>
+
+        <div class="row">
+
+            @foreach (dynamic item in Model.Unidades)
+            {
+                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 margin-bottom-20px">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="@item.Imagem" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>@item.Nome</h3>
+                            <span>@item.Telefone</span>
+                        </div>
+                        <p>@item.Endereco</p>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+        <div class="divider"></div>
+
+    </div>
+</section><!--/#meet-team-->

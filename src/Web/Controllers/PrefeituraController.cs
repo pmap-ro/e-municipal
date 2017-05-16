@@ -12,6 +12,11 @@ namespace Web.Controllers
             return View(LoadJson());
         }
 
+        public IActionResult Unidades()
+        {
+            return View(LoadJson());
+        }
+
         public dynamic LoadJson()
         {
             dynamic dados;

@@ -1,46 +1,64 @@
 {
-    "EquipeDeGoverno": [
-        {
-            "Nome": "Helma Santana Amorim",
-            "Cargo": "Prefeita",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/01.gif"
-        },
-        {
-            "Nome": "Valmir dos Santos",
-            "Cargo": "Vice-Prefeito",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/02.gif"
-        },
-        {
-            "Nome": "Edson Luiz Fernandes",
-            "Cargo": "Sec. Mun. Turismo, Cultura, Esporte e Lazer",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/02.gif"
-        },
-        {
-            "Nome": "Henrique da Silva",
-            "Cargo": "Sec. Mun. Administração, Planejamento e Finanças",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/02.gif"
-        },
-        {
-            "Nome": "Débora Lúcia Raposo da Silva",
-            "Cargo": "Sec. Mun. Educação / Chefe de Gabinete",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/01.gif"
-        },
-        {
-            "Nome": "Ericson da Silva Lopes",
-            "Cargo": "Sec. Mun. Obras e Serviços Públicos / Sec. Mun. Agricultura Industria e Comércio",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/02.gif"
-        },
-        {
-            "Nome": "Donato de Jesus Almeida",
-            "Cargo": "Sec. Mun. Adjunto de Obras e Serviços Públicos",
-            "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-            "Imagem": "../images/team/02.gif"
-        }
-    ]
+  "EquipeDeGoverno": [
+    {
+      "Nome": "Helma Santana Amorim",
+      "Cargo": "Prefeita",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/01.gif"
+    },
+    {
+      "Nome": "Valmir dos Santos",
+      "Cargo": "Vice-Prefeito",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/02.gif"
+    },
+    {
+      "Nome": "Edson Luiz Fernandes",
+      "Cargo": "Sec. Mun. Turismo, Cultura, Esporte e Lazer",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/02.gif"
+    },
+    {
+      "Nome": "Henrique da Silva",
+      "Cargo": "Sec. Mun. Administração, Planejamento e Finanças",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/02.gif"
+    },
+    {
+      "Nome": "Débora Lúcia Raposo da Silva",
+      "Cargo": "Sec. Mun. Educação / Chefe de Gabinete",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/01.gif"
+    },
+    {
+      "Nome": "Ericson da Silva Lopes",
+      "Cargo": "Sec. Mun. Obras e Serviços Públicos / Sec. Mun. Agricultura Industria e Comércio",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/02.gif"
+    },
+    {
+      "Nome": "Donato de Jesus Almeida",
+      "Cargo": "Sec. Mun. Adjunto de Obras e Serviços Públicos",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/02.gif"
+    }
+  ],
+  "Unidades": [
+    {
+      "Nome": "Secretaria Municipal de Obras e Serviços Públicos",
+      "Endereco": "Rua X",
+      "Telefone": "69 3534-0000",
+      "Email": "obras@altoparaiso.ro.gov.br",
+      "Responsavel": "Fulano de Tal",
+      "Imagem": "../images/team/01.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal de Saúde",
+      "Endereco": "Rua X",
+      "Telefone": "69 3534-0000",
+      "Email": "saude@altoparaiso.ro.gov.br",
+      "Responsavel": "Fulana de Tal",
+      "Imagem": "../images/team/01.gif"
+    }
+  ]
 }
