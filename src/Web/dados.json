@@ -46,19 +46,67 @@
   "Unidades": [
     {
       "Nome": "Secretaria Municipal de Obras e Serviços Públicos",
-      "Endereco": "Rua X",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
-      "Email": "obras@altoparaiso.ro.gov.br",
-      "Responsavel": "Fulano de Tal",
-      "Imagem": "../images/team/01.gif"
+      "Email": "semosp@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
     },
     {
       "Nome": "Secretaria Municipal de Saúde",
-      "Endereco": "Rua X",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-2112",
+      "Email": "semsau@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal de Educação",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-2108",
+      "Email": "semed@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal de Turismo, Cultura, Esporte e Lazer",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
-      "Email": "saude@altoparaiso.ro.gov.br",
-      "Responsavel": "Fulana de Tal",
-      "Imagem": "../images/team/01.gif"
+      "Email": "semtur@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal de Meio Ambiente",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-0000",
+      "Email": "sema@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal de Agricultura, Indústria e Comércio",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-0000",
+      "Email": "semagri@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal de Administração, Planejamento e Finanças",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-0000",
+      "Email": "semap@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
+    },
+    {
+      "Nome": "Secretaria Municipal do Trabalho e Assistência Social",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-0000",
+      "Email": "semtas@altoparaiso.ro.gov.br",
+      "Responsavel": "",
+      "Imagem": "../images/team/unidade.gif"
     }
   ]
 }
