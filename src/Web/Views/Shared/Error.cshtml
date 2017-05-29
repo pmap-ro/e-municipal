@@ -1,14 +1,140 @@
 ﻿@{
     ViewData["Title"] = "Error";
+    Layout = null;
 }
+<!-- CORRIGIR ESTA PAGINA DE ERRO-->
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<head>
 
-<h3>Development Mode</h3>
-<p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
-</p>
-<p>
-    <strong>Development environment should not be enabled in deployed applications</strong>, as it can result in sensitive information from exceptions being displayed to end users. For local debugging, development environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>, and restarting the application.
-</p>
+    <meta charset="UTF-8">
+    <title>Prefeitura Municipal de Alto Paraíso - RO</title>
+
+    <meta name="description" content="">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0
+        }
+
+        body {
+            overflow: hidden
+        }
+
+        #pagina-erro {
+            background: #00b5e2;
+            overflow: hidden;
+            width: 100%;
+            height: 50000px
+        }
+
+        #pagina-erro .wrap {
+            width: 750px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 280px
+        }
+
+        #pagina-erro #codigo {
+            width: 345px;
+            float: left;
+            color: #fff
+        }
+
+        #pagina-erro #codigo h1 {
+            font: 300 202px/55px 'Source Sans Pro', sans-serif;
+            position: relative;
+            margin-bottom: 15px
+        }
+
+        #pagina-erro #codigo h1 span {
+            font: 22px 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0
+        }
+
+        #pagina-erro #codigo h1 i {
+            background: url(./sad.png) no-repeat;
+            width: 25px;
+            height: 37px;
+            display: block;
+            position: absolute;
+            text-indent: -9999px;
+            top: 16px;
+            left: 149px
+        }
+
+        #pagina-erro #codigo p {
+            font: 14px 'Montserrat', sans-serif;
+            margin-bottom: 20px
+        }
+
+        #pagina-erro #codigo .erro {
+            color: #514689
+        }
+
+        #pagina-erro #sitemap {
+            width: 295px;
+            float: right;
+            margin-top: -20px
+        }
+
+        #pagina-erro #sitemap h2 {
+            color: #514689;
+            font: 24px 'Montserrat', sans-serif;
+            margin-bottom: 40px
+        }
+
+        #pagina-erro #sitemap ul {}
+
+        #pagina-erro #sitemap ul li {
+            font: 200 18px 'Montserrat', sans-serif;
+            list-style: none;
+            margin-bottom: 3px
+        }
+
+        #pagina-erro #sitemap ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #pagina-erro #sitemap ul li a:hover {
+            text-decoration: underline
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="pagina-erro">
+        <div class="wrap">
+            <div id="codigo">
+                <h1>4O4 <span>Página não encontrada</span> <i>:(</i></h1>
+                <p>Não localizamos a página que você está procurando.</p>
+                <p class="erro">Código do Erro: 404</p>
+            </div>
+            <div id="sitemap">
+                <h2>Temos alguns caminhos que podem te ajudar:</h2>
+                <ul>
+                    <li><a href="~/">Página Inicial</a></li>
+                    <li><a href="#">Leis</a></li>
+                    <li><a href="#">Equipe de Governo</a></li>
+                    <li><a href="#">Órgãos e Secretarias</a></li>
+                    <li><a href="#">Portal Transparência</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -36,6 +36,7 @@ body {
         color: #fff;
         padding: 6px 15px;
     }
+
         .menutopo ul li a:hover, .menutopo ul li a:focus {
             text-decoration: none;
             background-color: #FFF;
@@ -58,9 +59,45 @@ body {
     height: auto;
     padding: 10px;
 }
+
 .menutopo ul li > .icon-esic {
     background: url('../images/servicos/esic_icon.png') no-repeat 100% 50%;
     padding-right: 40px;
 }
+
+
+
+/* The only bit you need */
+.highcontrast {
+    background-color: #000;
+    color: white;
+}
+
+    .highcontrast h1,
+    .highcontrast h2, .highcontrast .section-header h2,
+    .highcontrast h3,
+    .highcontrast h4,
+    .highcontrast h5,
+    .highcontrast h6 {
+        color: #fff
+    }
+    .highcontrast a, .highcontrast .menutopo ul li a,
+    .highcontrast #menuprincipal a,
+    .highcontrast #main-menu.navbar-default .dropdown-menu > li a {
+        color: #ff0000;
+    }
+
+    .highcontrast .menutopo,
+    .highcontrast .btn.btn-primary,
+    .highcontrast #main-menu.navbar-default,
+    .highcontrast #portfolio,
+    .highcontrast #meet-team .team-member,
+    .highcontrast .breadcrumb,
+    .highcontrast #main-menu.navbar-default .dropdown-menu,
+    .highcontrast #main-slider .slider-inner h2,
+    .highcontrast .carousel-content p,
+    .highcontrast #cta2 h2 {
+        background-color: #000;
+    }
 
 

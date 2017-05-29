@@ -41,6 +41,12 @@
       "Cargo": "Sec. Mun. Adjunto de Obras e Serviços Públicos",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Imagem": "../images/team/02.gif"
+    },
+    {
+      "Nome": "Rosecléia da Silva",
+      "Cargo": "Sec. Mun. de Saúde",
+      "Endereco": "Rua Emiliano Lopes, 3795 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/01.gif"
     }
   ],
   "Unidades": [
@@ -49,56 +55,63 @@
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "semosp@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Ericson da Silva Lopes",
+      "Imagem": "fa-building-o",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal de Saúde",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-2112",
       "Email": "semsau@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Rosicléia da Silva",
+      "Imagem": "fa-hospital-o",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal de Educação",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-2108",
       "Email": "semed@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Débora Lúcia Raposo da Silva",
+      "Imagem": "fa-book",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal de Turismo, Cultura, Esporte e Lazer",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "semtur@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Edson Luiz Fernandes",
+      "Imagem": "fa-plane",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal de Meio Ambiente",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "sema@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Edson Luiz Fernandes",
+      "Imagem": "fa-tree",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal de Agricultura, Indústria e Comércio",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "semagri@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Ericson da Silva Lopes",
+      "Imagem": "fa-leaf",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal de Administração, Planejamento e Finanças",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-      "Telefone": "69 3534-0000",
+      "Telefone": "69 3534-2107",
       "Email": "semap@altoparaiso.ro.gov.br",
-      "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Responsavel": "Henrique da Silva",
+      "Imagem": "fa-money",
+      "Tipo": "secretaria"
     },
     {
       "Nome": "Secretaria Municipal do Trabalho e Assistência Social",
@@ -106,7 +119,35 @@
       "Telefone": "69 3534-0000",
       "Email": "semtas@altoparaiso.ro.gov.br",
       "Responsavel": "",
-      "Imagem": "../images/team/unidade.gif"
+      "Imagem": "fa-users",
+      "Tipo": "secretaria"
+    },
+    {
+      "Nome": "Procuradoria Geral do Município",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-2107",
+      "Email": "procuradoria@altoparaiso.ro.gov.br",
+      "Responsavel": "Alcides Soares Junior",
+      "Imagem": "fa-users",
+      "Tipo": "departamento"
+    },
+    {
+      "Nome": "Controladoria Geral do Município",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-2107",
+      "Email": "controladoria@altoparaiso.ro.gov.br",
+      "Responsavel": "Jeniffer Priscila Zacharias",
+      "Imagem": "fa-users",
+      "Tipo": "departamento"
+    },
+    {
+      "Nome": "Departamento de Informática",
+      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Telefone": "69 3534-2107 - Ramal 231",
+      "Email": "cleytonferrari@altoparaiso.ro.gov.br",
+      "Responsavel": "Cleyton Cesar Ferrari",
+      "Imagem": "fa-users",
+      "Tipo": "departamento"
     }
   ]
 }
