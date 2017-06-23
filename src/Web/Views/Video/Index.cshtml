@@ -1,0 +1,74 @@
+
+@{
+    ViewData["Title"] = "Vídeos";
+}
+
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="~/">Início</a></li>
+        <li>Mídias</li>
+        <li><a asp-area="" asp-controller="video" asp-action="index" class="active">Vídeos</a></li>
+    </ol>
+</div>
+
+
+<div class="video"></div>
+@section Scripts{
+    <script type="text/javascript">
+        //http://www.designinterativo.etc.br/front-end/obtendo-ultimo-video-do-canal-do-youtube-no-seu-website
+
+        var htmlString01 = "";
+        var htmlString0203 = "";
+        var apiKey = 'AIzaSyDQFfgb5bGkhYfjtaxsICXRqxbLkVaN-JM'; //https://console.developers.google.com
+        var channelID = 'UCOWNcvv50q5xaY2Mizh0eHg';
+        var maxResults = 3;
+
+        $.getJSON('https://www.googleapis.com/youtube/v3/search?key=' + apiKey + '&channelId=' + channelID + '&part=snippet,id&order=date&maxResults=' + maxResults, function (data) {
+            $.each(data.items, function (i, item) {
+                console.log(item);
+                var videoID = item['id']['videoId'];
+                var title = item['snippet']['title'];
+                var description = item['snippet']['description'];
+                var date = item['snippet']['publishedAt'];
+                var videoEmbed = "https://www.youtube.com/embed/" + videoID;
+
+                //htmlString += '<div class="video"><h2>' + title + '</h2><br><a href="' + videoEmbed + '"><img src="http://img.youtube.com/vi/' + videoID + '/0.jpg"></a></div>';
+                if (i == 0)
+                    htmlString01 += '<article> <header class="entry-header">  <div class="entry-thumbnail">  <img class="img-responsive" src="http://img.youtube.com/vi/' + videoID + '/0.jpg" alt="" width="100%">  <span class="post-format post-format-video"><i class="fa fa-film"></i></span>    </div>    <div class="entry-date">' + date + '</div>  <h2 class="entry-title"><a href="#">' + title + '</a></h2>  </header> <div class="entry-content"><p>  ' + description + '  </p>  </div> </article >';
+                if (i != 0)
+                    htmlString0203 += '<div class="blog-post blog-media wow fadeInRight animated" data-wow-duration="300ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 300ms; animation-delay: 100ms; animation-name: fadeInRight;"> <article class="media clearfix"> <div class="entry-thumbnail pull-left"><img class="img-responsive" src="http://img.youtube.com/vi/' + videoID + '/0.jpg" alt="" width="263px" heigth="301px"> <span class="post-format post-format-video"><i class="fa fa-film"></i></span></div> <div class="media-body">  <header class="entry-header">  <div class="entry-date">' + date + '</div><h2 class="entry-title"><a href="#">' + title + '</a></h2></header><div class="entry-content"> <p>' + description + '</p></div></div></article></div>';
+
+            });
+            $('.video01').html(htmlString01);
+            $('.video0203').html(htmlString0203);
+        });
+    </script>
+}
+
+
+
+<section id="blog">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Vídeos</h2>
+            <p class="text-center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                Veja nossos vídeos e transmissões ao vivo.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="blog-post blog-large wow fadeInLeft animated video01" data-wow-duration="300ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 300ms; animation-delay: 0ms; animation-name: fadeInLeft;">
+
+                </div>
+            </div>
+            <!--/.col-sm-6-->
+            <div class="col-sm-6 video0203">
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
