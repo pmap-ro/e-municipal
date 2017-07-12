@@ -14,13 +14,14 @@
 
 <div class="video"></div>
 @section Scripts{
+
     <script type="text/javascript">
         //http://www.designinterativo.etc.br/front-end/obtendo-ultimo-video-do-canal-do-youtube-no-seu-website
 
         var htmlString01 = "";
         var htmlString0203 = "";
         var apiKey = 'AIzaSyDQFfgb5bGkhYfjtaxsICXRqxbLkVaN-JM'; //https://console.developers.google.com
-        var channelID = 'UCOWNcvv50q5xaY2Mizh0eHg';
+        var channelID = 'UCOrbF0mil3daBD69GPmD5sA';
         var maxResults = 3;
 
         $.getJSON('https://www.googleapis.com/youtube/v3/search?key=' + apiKey + '&channelId=' + channelID + '&part=snippet,id&order=date&maxResults=' + maxResults, function (data) {
@@ -34,13 +35,29 @@
 
                 //htmlString += '<div class="video"><h2>' + title + '</h2><br><a href="' + videoEmbed + '"><img src="http://img.youtube.com/vi/' + videoID + '/0.jpg"></a></div>';
                 if (i == 0)
-                    htmlString01 += '<article> <header class="entry-header">  <div class="entry-thumbnail">  <img class="img-responsive" src="http://img.youtube.com/vi/' + videoID + '/0.jpg" alt="" width="100%">  <span class="post-format post-format-video"><i class="fa fa-film"></i></span>    </div>    <div class="entry-date">' + date + '</div>  <h2 class="entry-title"><a href="#">' + title + '</a></h2>  </header> <div class="entry-content"><p>  ' + description + '  </p>  </div> </article >';
+                    htmlString01 += '<article> <header class="entry-header">  <div class="entry-thumbnail"> <a href="#" data-toggle="modal" data-target="#lightbox"> <img data-videoid="'+videoID+'" class="img-responsive" src="http://img.youtube.com/vi/' + videoID + '/0.jpg" alt="" width="100%"> </a> <span class="post-format post-format-video"><i class="fa fa-film"></i></span>    </div>    <div class="entry-date">' + date + '</div>  <h2 class="entry-title">' + title + '</h2>  </header> <div class="entry-content"><p>  ' + description + '  </p>  </div> </article >';
                 if (i != 0)
-                    htmlString0203 += '<div class="blog-post blog-media wow fadeInRight animated" data-wow-duration="300ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 300ms; animation-delay: 100ms; animation-name: fadeInRight;"> <article class="media clearfix"> <div class="entry-thumbnail pull-left"><img class="img-responsive" src="http://img.youtube.com/vi/' + videoID + '/0.jpg" alt="" width="263px" heigth="301px"> <span class="post-format post-format-video"><i class="fa fa-film"></i></span></div> <div class="media-body">  <header class="entry-header">  <div class="entry-date">' + date + '</div><h2 class="entry-title"><a href="#">' + title + '</a></h2></header><div class="entry-content"> <p>' + description + '</p></div></div></article></div>';
+                    htmlString0203 += '<div class="blog-post blog-media wow fadeInRight animated" data-wow-duration="300ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 300ms; animation-delay: 100ms; animation-name: fadeInRight;"> <article class="media clearfix"> <div class="entry-thumbnail pull-left"> <a href="#" data-toggle="modal" data-target="#lightbox"><img data-videoid="' + videoID +'" class="img-responsive" src="http://img.youtube.com/vi/' + videoID + '/0.jpg" alt="" width="263px" heigth="301px"> </a> <span class="post-format post-format-video"><i class="fa fa-film"></i></span></div> <div class="media-body">  <header class="entry-header">  <div class="entry-date">' + date + '</div><h2 class="entry-title">' + title + '</h2></header><div class="entry-content"> <p>' + description + '</p></div></div></article></div>';
 
             });
             $('.video01').html(htmlString01);
             $('.video0203').html(htmlString0203);
+
+            //lightbox
+            var $lightbox = $('#lightbox');
+
+            $('[data-target="#lightbox"]').on('click', function (event) {
+                var $img = $(this).find('img'),
+                    src = "https://www.youtube.com/embed/" + $img.data('videoid');
+
+                $lightbox.find('.close').addClass('hidden');
+                $lightbox.find('iframe').attr('src', src);
+            });
+
+            $lightbox.on('shown.bs.modal', function (e) {
+                var $img = $lightbox.find('iframe');
+                $lightbox.find('.close').removeClass('hidden');
+            });
         });
     </script>
 }
@@ -70,5 +87,18 @@
         </div>
 
     </div>
+
+
+    <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">X</button>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 

@@ -13,7 +13,7 @@
       "Imagem": "../images/team/02.gif"
     },
     {
-      "Nome": "Edson Luiz Fernandes",
+      "Nome": "",
       "Cargo": "Sec. Mun. Turismo, Cultura, Esporte e Lazer",
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Imagem": "../images/team/02.gif"
@@ -37,16 +37,16 @@
       "Imagem": "../images/team/02.gif"
     },
     {
-      "Nome": "Donato de Jesus Almeida",
-      "Cargo": "Sec. Mun. Adjunto de Obras e Serviços Públicos",
-      "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
-      "Imagem": "../images/team/02.gif"
-    },
-    {
       "Nome": "Rosecléia da Silva",
       "Cargo": "Sec. Mun. de Saúde",
       "Endereco": "Rua Emiliano Lopes, 3795 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Imagem": "../images/team/01.gif"
+    },
+    {
+      "Nome": "Osvaldo Teodoro dos Santos",
+      "Cargo": "Sec. Mun. do Trabalho e Assistência social",
+      "Endereco": "Rua Emiliano Lopes, 3795 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
+      "Imagem": "../images/team/02.gif"
     }
   ],
   "Unidades": [
@@ -82,7 +82,7 @@
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "semtur@altoparaiso.ro.gov.br",
-      "Responsavel": "Edson Luiz Fernandes",
+      "Responsavel": "",
       "Imagem": "fa-plane",
       "Tipo": "secretaria"
     },
@@ -91,7 +91,7 @@
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "sema@altoparaiso.ro.gov.br",
-      "Responsavel": "Edson Luiz Fernandes",
+      "Responsavel": "",
       "Imagem": "fa-tree",
       "Tipo": "secretaria"
     },
@@ -118,7 +118,7 @@
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-0000",
       "Email": "semtas@altoparaiso.ro.gov.br",
-      "Responsavel": "",
+      "Responsavel": "Osvaldo Teodoro dos Santos",
       "Imagem": "fa-users",
       "Tipo": "secretaria"
     },
@@ -136,7 +136,7 @@
       "Endereco": "Av. Jorge Teixeira, 3031 - Centro, CEP: 76.862-000 - Alto Paraíso-RO",
       "Telefone": "69 3534-2107",
       "Email": "controladoria@altoparaiso.ro.gov.br",
-      "Responsavel": "Jeniffer Priscila Zacharias",
+      "Responsavel": "Valderia Angela Cazetta",
       "Imagem": "fa-users",
       "Tipo": "departamento"
     },
